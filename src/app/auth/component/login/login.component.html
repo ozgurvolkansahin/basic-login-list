@@ -1,0 +1,58 @@
+
+    
+    <!-- <div class="form-center"> -->
+            
+        <!-- SUCCESS ALERT -->
+        <alert type="success"
+            *ngIf="loginSuccessful && loginFormSubmitted">
+            <strong>You successfully logged in!</strong> You'll be redirected to dashboard page.
+        </alert>
+        <!--. SUCCESS ALERT -->
+    
+        <!-- DANGER ALERT -->
+        <alert type="danger"
+        *ngIf="!loginSuccessful && loginFormSubmitted">
+            <strong>Login unsuccessful!</strong> Check your username and password and try again.
+        </alert>
+        <!--. DANGER ALERT -->
+    
+        <!--. LOGIN FORM -->
+        <form [formGroup]="loginForm"
+        class="form-margin-mobile login-form-template">
+    
+            <!-- EMAIL FIELD -->
+            <app-email
+            [placeholder]="'E-mail adresinizi giriniz'"
+            [label]="'E-Mail'"
+            [type]="'text'"
+            formControlName="username"
+            [formControlName]="'username'"
+            [parentForm]="loginForm"
+            ></app-email>
+            <!--. EMAIL FIELD -->
+            
+            <!-- PASSWORD FIELD -->
+            <app-email
+            [placeholder]="'******'"
+            [label]="'Şifre'"
+            [type]="'password'"
+            formControlName="password"
+            [formControlName]="'password'"
+            [parentForm]="loginForm"
+    
+            ></app-email>
+            <!--. PASSWORD FIELD -->
+    
+            <!-- FORGET PASSWORD -->
+            <a class="forget-password"
+            [routerLink]="'/auth/forget-password'">Şifremi Unuttum</a>
+            <!--. FORGET PASSWORD -->
+    
+            <!-- LOGIN BUTTON -->
+            <button type="button" (click)="loginForm.markAllAsTouched(); login()" class="btn btn-primary btn-block">
+                Giriş Yap
+            </button>
+            <!--. LOGIN BUTTON -->
+        </form>
+    <!--. LOGIN FORM -->
+    <!-- </div> -->

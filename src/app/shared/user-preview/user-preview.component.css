@@ -1,0 +1,29 @@
+.user-preview {
+    border-right: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.user-image {
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    background-size: auto 100%;
+    float:left;
+}
+
+
+
+span {
+    display: block;
+}
+
+.user-name {
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+}
+
+.user-info-preview {
+    font-size: 12px;
+    font-style: italic;
+}

@@ -1,0 +1,40 @@
+  .forget-password {
+      cursor: pointer;
+      float: right;
+      margin-bottom: 20px;
+  }
+  .form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.login-form-template {
+    display: grid;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    :host ::ng-deep .flex-div {
+        flex: 1 1 auto;
+    }
+    :host ::ng-deep .form-margin-mobile {
+        margin-bottom: 50px;
+    }
+    :host ::ng-deep .header-padding-mobile {
+        padding-top: 30px;
+    }
+    :host ::ng-deep .maps-image-width {
+        width: 75%;;
+    }
+  }

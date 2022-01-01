@@ -1,0 +1,7 @@
+<div class="form-group">
+    <label for="inputsm"> {{label}} </label>
+    <input class="form-control bg-secondary text-white" type="{{type}}" (input)="changed($event.target.value)"
+        placeholder="{{placeholder}}" (focusout)="onTouch($event)">
+    <app-validation-message [formField]="formField">
+    </app-validation-message>
+</div>

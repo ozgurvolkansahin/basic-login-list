@@ -1,0 +1,34 @@
+.form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .login-form {
+      background-color: white;
+  }
+  
+  .welcome-text-margin {
+      margin: 20px 0px 20px 0px;
+  }
+
+.maps-image-width {
+    width: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+    :host ::ng-deep .flex-div {
+        flex: 1 1 auto;
+    }
+    :host ::ng-deep .form-margin-mobile {
+        margin-bottom: 50px;
+    }
+    :host ::ng-deep .header-padding-mobile {
+        padding-top: 30px;
+    }
+    :host ::ng-deep .maps-image-width {
+        width: 75%;;
+    }
+  }

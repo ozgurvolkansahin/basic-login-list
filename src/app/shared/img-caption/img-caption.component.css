@@ -1,0 +1,11 @@
+.caption {
+    display: block;
+    text-align: center;
+}
+
+.welcome-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

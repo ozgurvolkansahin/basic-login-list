@@ -1,0 +1,67 @@
+.list-main-bg {
+    background-color: white;
+    /* height: 100%; */
+    min-height: 95vh;
+}
+
+.user-preview {
+    border-right: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.user-image {
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    background-size: auto 100%;
+    float:left;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-detail-div {
+        display: none !important;
+    }
+}
+
+.welcome-image {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    display: block;
+}
+
+.user-name {
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+}
+
+.user-info-preview {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.load-more {
+    color: blue;
+    text-align: center;
+    cursor: pointer;
+}
+.caption {
+    display: block;
+    text-align: center;
+}
+
+.list-header {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+  }

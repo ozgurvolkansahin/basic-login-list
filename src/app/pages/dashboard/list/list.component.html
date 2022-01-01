@@ -1,0 +1,21 @@
+<div class="list-main-bg">
+    <div class="row" *ngIf="userList.length > 0">
+        <div class="col-md-3 com-sm-12">
+            <span class="list-header"><strong class="list-header">Kullanıcı listesi</strong></span>
+            <div class="row"
+            *ngFor="let user of userList">
+                <div class="col-md-12 col-sm-12 user-preview">
+                    <app-user-preview [user]="user"></app-user-preview>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <a class="load-more">Daha fazla yükle</a>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12 hide-detail-div center">
+            <app-img-caption
+            [src]="'assets/images/welcome-dashboard.png'"
+            [caption]="'Google Maps’e Hoşgeldiniz'"></app-img-caption>
+        </div>
+    </div>
+</div>
