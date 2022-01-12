@@ -46,9 +46,10 @@ span {
 }
 
 .load-more {
-    color: blue;
+    /* color: blue; */
     text-align: center;
     cursor: pointer;
+    display: block;
 }
 .caption {
     display: block;
@@ -59,6 +60,7 @@ span {
     margin-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    font-size: 24px;
 }
 
 .center {

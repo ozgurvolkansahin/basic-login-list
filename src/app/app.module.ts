@@ -19,7 +19,7 @@ import { AppInterceptor } from './app-http-interceptor';
     HttpClientModule,
   ],
   providers: [AuthService,
-    { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]
 })

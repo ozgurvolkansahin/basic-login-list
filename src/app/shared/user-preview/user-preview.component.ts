@@ -12,7 +12,6 @@ export class UserPreviewComponent implements OnInit {
 
   @Input() user: UserPreview;
   ngOnInit(): void {
-    console.log(this.user);
   }
 
 }

@@ -12,16 +12,17 @@ import { UserPreview } from '../interface/userPreview';
 export class ListComponent implements OnInit {
 
   constructor(private dashboardData: DashboardData) {
-    this.getUsers(this.limit);
+    this.getUsers(this.page, this.limit);
   }
+  page = 0;
   limit = 10;
   userList: UserPreview[] = [];
   ngOnInit(): void {
   }
 
-  getUsers(limit: number): void {
-    this.dashboardData.userPreviewList(limit).subscribe(result => {
-      this.userList = result.data;
+  getUsers(page: number, limit: number): void {
+    this.dashboardData.userPreviewListv2(page, limit).subscribe(result => {
+      this.userList = this.userList.concat(result.data);
     });
   }
 }

@@ -1,26 +1,19 @@
   .forget-password {
-      cursor: pointer;
-      float: right;
-      margin-bottom: 20px;
-  }
-  .form-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    margin-top: 20px;
+    text-align: right;
+    display: grid;
   }
 
-  .form-center {
+  /* .form-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  }
+  } */
 
 .login-form-template {
-    display: grid;
+    display: block;
     justify-content: center;
 }
 
@@ -28,6 +21,9 @@
     :host ::ng-deep .flex-div {
         flex: 1 1 auto;
     }
+    :host ::ng-deep .login-form-template {
+      display: grid;
+  }
     :host ::ng-deep .form-margin-mobile {
         margin-bottom: 50px;
     }
